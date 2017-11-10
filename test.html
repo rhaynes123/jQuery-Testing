@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jquery crash course|selectors</title>
+</script>
+</head>
+<body>
+
+
+<style>
+body{
+	font-size: 17px;
+	font-family: arial;
+	background: #f4f4f4;
+	line-height: 1.5em;
+}
+	header{
+		background: #333;
+		color:#fff;
+		padding: 20px;
+		text-align: center;
+		border-bottom: 4px #000 solid;
+		margin-bottom: 10px;
+	}
+</style>
+
+	<header>
+		<h1>Jquery crash course</h1>
+	</header>
+	<div id = "container">
+		<h1 id = "heading1">Heading one</h1>
+		<p id = "para1">This is a test</p>
+
+		<h1 class = "heading2">Heading two</h1>
+		<p class = "para2">This is a test</p>
+		<ul id = "list">
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+
+			<li>List Item</li>
+			<li>List Item</li>
+
+			
+		</ul>
+		<input type="button" value ="button 1">
+		<input type="submit" name="button 1">
+		<input type="text">
+		<a href="https://google.com">Google</a>
+		<a href="https://Yahoo.com">Yahoo</a>
+
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$("h1.heading2").hide();
+		$(document).ready(function(){
+			alert("im working");
+	});
+		$("ul#list li:first").css("color","red");
+		$("ul#list li:last").css("color","green");
+
+		$("ul#list li:even").css("background-color","yellow");
+		$("ul#list li:odd").css("background-color","grey");
+
+
+
+
+	</script>
+	
+</body>
+</html>
